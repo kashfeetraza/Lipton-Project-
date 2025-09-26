@@ -9,17 +9,22 @@
         * {
             padding: 0;
             margin: 0;
+            /* background-color: rgb(247,245,244); */
         }
-
+        nav{
+            color: white;
+            background-color: rgb(255, 209, 0);
+        }
         .navbar {
             display: flex;
             justify-content: end;
             align-items: center;
             text-align: center;
+            background-color: rgb(255, 209, 0); 
         }
 
         .buy {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 16px;
             font-weight: 700;
@@ -33,17 +38,17 @@
         }
 
         .icon {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 14px;
             font-weight: 700;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             display: flex;
             justify-content: center;
         }
 
         .icon ul li {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             text-align: center;
             align-items: center;
             padding: 40px 10px 20px 10px;
@@ -55,7 +60,7 @@
         }
 
         .backgroudimg {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             height: 90vh;
             background-image: url(assets/2000x807-fruits-herbals.webp);
             background-size: contain;
@@ -63,7 +68,7 @@
         }
 
         .button {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             position: relative;
         }
 
@@ -84,7 +89,7 @@
 
         .button1 {
             position: relative;
-            padding: 20px 0px;
+            padding: 10px 0px;
         }
 
         .button1 button {
@@ -100,7 +105,7 @@
         }
 
         .imgandtext {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -108,6 +113,13 @@
         }
 
         .text {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            color: rgb(69, 69, 67);
+            padding: 0px 170px 0px 100px;
+        }
+        .text1 {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 22px;
             font-weight: 400;
@@ -238,14 +250,34 @@
             font-weight: 700;
             color: rgb(69, 69, 67);
         }
-
+        
         .domain {
             display: flex;
             justify-content: center;
         }
         .container1{
-            padding: 40px;
+            background-color: ;
+            padding: 70px;
             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sectionboxtext{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+        .sectionboxtext h2{
+            font-size: 22px;
+            font-weight: 500;
+            color: rgb(69, 69, 67);
+        }
+        .sectionboxtext p{
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(69, 69, 67);
+        }
+        .grey{
+            background-color: rgb(247,245,244);
         }
     </style>
 </head>
@@ -278,7 +310,8 @@
         </div>
 
     </div>
-
+    
+<div class="grey">
     <div class="imgandtext">
         <div class="imag">
             <img src="assets/Lipton-website-150dpi-_Module-1.webp" width="500px" alt="">
@@ -292,7 +325,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="imgandtext">
         <div class="imag">
@@ -379,10 +411,11 @@
 
     <div class="container1">
         <div class="sectionboximg">
-            <img src="assets/Module-3-Lipton-Website_LYL_100.webp" width="450px" alt="">
+            <img src="assets/Module-3-Lipton-Website_LYL_100.webp" width="630px" alt="">
         </div>
         <div class="sectionboxtext">
             <h2>Yellow Label Black Tea</h2>
+            <br>
             <p>INFUSE YOUR DAY with the unbeatable, smooth taste of Lipton Black Tea, bursting with lively flavor and
                 rich aroma. Whether you enjoy your tea hot or iced, Lipton delivers the perfect way to start your day or
                 for a gentle boost of vitality anytime. Our Master Blenders select flavorful tea leaves from Argentina,
@@ -392,8 +425,20 @@
                 For iced tea, fill a glass halfway with boiling water and brew one tea bag for 3-4 minutes then fill the
                 glass with ice.
             </p>
+            <div class="imgandtext1">
+                 <div class="text1">
+                      <div class="button1">
+                           <button>Shop Now</button>
+                      </div>
+                 </div>
+            </div>
         </div>
     </div>
+
+    <div class="footer">
+        
+    </div>
+</div>
 </body>
 
 </html>
