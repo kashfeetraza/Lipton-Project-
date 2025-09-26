@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipton-Project</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            text-align: center;
+        }
+
+        .buy {
+            border: 1px solid black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        .icon ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .icon {
+            border: 1px solid black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .icon ul li {
+            border: 1px solid black;
+            text-align: center;
+            align-items: center;
+            padding: 40px 10px 20px 10px;
+
+        }
+
+        .icon ul li img {
+            padding: 0;
+        }
+
+        .backgroudimg {
+            border: 1px solid black;
+            height: 90vh;
+            background-image: url(assets/2000x807-fruits-herbals.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .button {
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .button button {
+            width: 120px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            height: 50px;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            border: transparent;
+            position: absolute;
+            top: 320px;
+            left: 620px;
+        }
+
+        .button1 {
+            position: relative;
+            padding: 20px 0px;
+        }
+
+        .button1 button {
+            width: 120px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            height: 50px;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            border: transparent;
+        }
+
+        .imgandtext {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 90px;
+        }
+
+        .text {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            color: rgb(69, 69, 67);
+            padding: 0px 170px 0px 100px;
+        }
+
+        .header p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: rgb(69, 69, 67);
+            letter-spacing: 5px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+
+        #headingrow {
+            background-color: rgb(255, 209, 0);
+            width: 250px;
+            height: 5px;
+            border: transparent;
+            margin: 5px;
+        }
+
+        #headingrow1 {
+            background-color: rgb(255, 209, 0);
+            width: 350px;
+            height: 5px;
+            border: transparent;
+            margin: 5px;
+        }
+
+        .headon {
+            display: flex;
+            justify-content: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 equal columns */
+            gap: 20px;
+            height: 500px;
+            /* fixed height */
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .box {
+            /* background: rgb(255, 255, 255); */
+            /* display: flex;               flex inside each box */
+            /* align-items: center;         vertically center */
+            /* justify-content: center;     horizontally center */
+            /* font-size: 20px;
+            font-weight: bold; */
+            background-image: url(assets/Lipton-website-150dpi-_Recipes_ColdBrew-Tea-Desktop.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box1 {
+            /* background: rgb(255, 255, 255); */
+            /* display: flex;               flex inside each box */
+            /* align-items: center;         vertically center */
+            /* justify-content: center;     horizontally center */
+            /* font-size: 20px;
+            font-weight: bold; */
+            background-image: url(assets/Lipton-website-150dpi-_Recipes_Cinnamon-Tea-Desktop.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box2 {
+            /* background: rgb(255, 255, 255); */
+            /* display: flex;               flex inside each box */
+            /* align-items: center;         vertically center */
+            /* justify-content: center;     horizontally center */
+            /* font-size: 20px;
+            font-weight: bold; */
+            background-image: url(assets/Lipton-website-150dpi-_Recipes_Late-Night-Tea-Latte-Desktop.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .boxtext {
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image {
+            padding-top: 80px;
+        }
+
+        .imageheading h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: 700;
+            color: rgb(255, 209, 0);
+            padding: 10px;
+        }
+
+        .imagepara p {
+            text-transform: capitalize;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-shadow: 2px 2px 5px gray;
+            padding: 120px 50px 0px 50px;
+            text-align: center;
+        }
+
+        .domain p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+            color: rgb(69, 69, 67);
+        }
+
+        .domain {
+            display: flex;
+            justify-content: center;
+        }
+        .container1{
+            padding: 40px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="backgroudimg">
+        <nav>
+            <div class="navbar">
+                <div class="buy">
+                    Where to buy
+                </div>
+            </div>
+
+            <div class="icon">
+                <ul>
+                    <li>OUR TEAS </li>
+                    <li>WORLD OF TEA</li>
+                    <li>RECIPES</li>
+                    <li><img src="assets/Lipton_LogoHaloUSA_BD-2.webp" width="100px" alt=""></li>
+                    <li>HEART HEALTH</li>
+                    <li>GREEN TEA</li>
+                    <li>OUR PURPOSE</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="button">
+            <button>Shop Now</button>
+        </div>
+
+    </div>
+
+    <div class="imgandtext">
+        <div class="imag">
+            <img src="assets/Lipton-website-150dpi-_Module-1.webp" width="500px" alt="">
+        </div>
+        <div class="text">
+            We brewed up a fresh new look while our
+            i-c-o-n-i-c taste remains unchanged. Find
+            our new packs wherever you shop.
+            <div class="button1">
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="imgandtext">
+        <div class="imag">
+            <img src="assets/Lipton-website-150dpi-Module-2.webp" width="500px" alt="">
+        </div>
+        <div class="text">
+            Find your sweet spot! Whether you’re looking for our classic Lemon Iced Tea, or you want to explore our new
+            sugar-reduced and fruit-flavored zero-sugar alternatives, you will always find the cool, crisp, satisfying
+            taste of Lipton in every cup!
+            <div class="button1">
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <p>Recipes for Every Occasion</p>
+    </div>
+
+    <div class="headon">
+        <div>
+            <hr id="headingrow">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid-container">
+
+            <div class="box">
+                <div class="boxtext">
+                    <div class="image">
+                        <img src="assets/icon-recipe.webp" width="50px" alt="">
+                    </div>
+                    <div class="imageheading">
+                        <h2>RECIPES</h2>
+                    </div>
+                    <div class="imagepara">
+                        <p>COLD BREW ICED TEA RECIPES</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="boxtext">
+                    <div class="image">
+                        <img src="assets/icon-recipe.webp" width="50px" alt="">
+                    </div>
+                    <div class="imageheading">
+                        <h2>RECIPES</h2>
+                    </div>
+                    <div class="imagepara">
+                        <p>COLD BREW ICED TEA RECIPES</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="boxtext">
+                    <div class="image">
+                        <img src="assets/icon-recipe.webp" width="50px" alt="">
+                    </div>
+                    <div class="imageheading">
+                        <h2>RECIPES</h2>
+                    </div>
+                    <div class="imagepara">
+                        <p>COLD BREW ICED TEA RECIPES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="domain">
+        <p>
+            DISCOVER AMERICA'S FAVORITE TEA!
+        </p>
+    </div>
+
+    <div class="headon">
+        <div>
+            <hr id="headingrow1">
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="sectionboximg">
+            <img src="assets/Module-3-Lipton-Website_LYL_100.webp" width="450px" alt="">
+        </div>
+        <div class="sectionboxtext">
+            <h2>Yellow Label Black Tea</h2>
+            <p>INFUSE YOUR DAY with the unbeatable, smooth taste of Lipton Black Tea, bursting with lively flavor and
+                rich aroma. Whether you enjoy your tea hot or iced, Lipton delivers the perfect way to start your day or
+                for a gentle boost of vitality anytime. Our Master Blenders select flavorful tea leaves from Argentina,
+                picked at their peak of freshness, and perfectly balance them with vibrant and aromatic tea from Malawi
+                to create a delicious and 100% Rainforest Alliance Certified blend. There's so much to love about
+                America's Favorite Tea! To brew a hot cup, steep a tea bag in 8 fl oz of boiling water for 3-4 minutes.
+                For iced tea, fill a glass halfway with boiling water and brew one tea bag for 3-4 minutes then fill the
+                glass with ice.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
